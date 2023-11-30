@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+</head>
+<body>
+    <h1 id="best" onclick="changeColor()">Best Choice Technologies</h1>
+    <p class="para"></p>
+    <h2 id="age"></h2>
+    <p class="show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quae nemo, placeat consequatur dignissimos temporibus dolore officiis deleniti culpa at quas laboriosam in adipisci sequi cupiditate architecto facilis ad porro nesciunt unde cum iusto distinctio qui? Consequuntur officia accusantium, quasi voluptatem est deserunt sint laborum repellendus, recusandae tenetur minus corporis vero omnis, veniam reprehenderit quaerat. Vero nulla totam saepe autem, illo atque a. Deleniti, facere voluptates perspiciatis dolor a pariatur quas, possimus, officia dolores quo neque qui nemo? Reiciendis unde voluptatem culpa explicabo. Ipsam dignissimos sequi ea earum, fugiat pariatur asperiores voluptates aut nemo veritatis ad non possimus facere odit excepturi voluptatem quia et delectus placeat consequuntur aliquid culpa. Qui porro hic dicta quasi voluptate, nostrum ea sit repudiandae ex quos, perspiciatis doloribus nisi quis. Est facere, repellat possimus debitis fugit cupiditate suscipit exercitationem natus deserunt voluptatibus enim aut officia ex, totam magnam. Dignissimos in corrupti non amet tempore molestiae voluptates ratione recusandae ullam laudantium, rem, repellendus a tenetur dicta eligendi libero. Quia quasi id modi porro tempora accusamus exercitationem nisi dolorem. Earum, reiciendis repellendus? Aspernatur, doloremque? Veniam porro aperiam maiores, odit temporibus dolore vel itaque, minus corrupti iusto maxime blanditiis, quidem debitis cum. Exercitationem architecto recusandae id molestias nostrum!</p>
+    
+
+    <script>
+        // let day = 'Saturday';
+
+        // switch (day){
+        //     case 'Monday':
+        //         console.log("Today is Monday");
+        //         console.log("Fist is Javascript Class");
+        //         break;
+        //     case 'Tuesday':
+        //         console.log("Today is Tuesday");
+        //         break;
+        //     case 'Wednesday':
+        //         console.log("Today is Tuesday");
+        //         break;
+        //     case 'Saturday':
+        //         console.log("Today weekend");
+        //         break;
+        //     case 'Sunday':
+        //         console.log("Today a resting day");
+        //         break;
+               
+           
+        // }
+        // console.log(3 === '3');
+
+        // = Assignment
+        // == loose compare
+        // === strict comparison
+
+        // let age = 13;
+        let device = false;
+        let place = 'Abuja';
+
+        // if (age > 10 || device === true && place === 'Lagos') {
+        //     console.log("You are welcome");
+        // } else {
+            // console.log("Come back later");
+        // }
+        // console.log(myname);
+
+        
+        function greetings(name){
+           let greet = `good morning ${name}`;
+           return greet;
+            // alert(greetings('Micheal'))
+        }
+        // greetings();
+
+        
+        // let myname = "John";
+
+        // let sayHi = function(friend){
+        //     return console.log(`Hello there ${friend}`);
+        // }
+
+        // let say = sayHi("Goodluck")
+
+        // function multiply(a, b){
+        //     return a * b
+        // }
+        // function add(a, b){
+        //     return a + b
+        // }
+        // console.log(add(20, 23));
+        // console.log(multiply(23, 65));
+       
+        // let ageCalculator = function(a, b){
+        //     return a + b
+        // }
+
+        // let age = ageCalculator(2023, 1999)
+        // console.log(age);
+
+        // const myAge = () =>{
+
+        // }
+
+
+        // Loop
+        // console.log('My name is John');
+        // console.log('My name is John');
+        // console.log('My name is John');
+
+
+    //initialisation, condition, iteration count
+    for(let age = 1; age <= 20; age++){
+        console.log(`My name is John`);
+        console.log(`Well-done here ${age}`);
+    }
+     
+    let myAge = 11;
+
+    while (myAge > 10) {
+        console.log(`I am great ${myAge}`);
+        myAge--
+    }
+
+
+    // const fruit = "Mango", "Orange"
+    //Array
+
+    const fruits = ["Mango", "Apple", "Orange", "Bannan"]
+        
+    //index number
+    console.log(fruits.length);
+    console.log(typeof(fruits));
+    console.log(fruits[3]);
+
+    console.log(fruits);
+
+    // Object
+    const phone = {
+        color: "white",
+        pouch: "black",
+        brand: "Infinix"
+    }
+    console.log(phone);
+
+    console.log(phone.color);
+    console.log(phone.pouch);
+    console.log(phone["brand"]);
+
+    // DOM
+
+    //getElementById
+    //querySelector
+    //querySelectorAll
+    //tagname
+    const bestchoice = document.getElementById('best');
+    const para2 = document.querySelector('.para');
+    let age = document.getElementById('age');
+    let show = document.querySelector('.show');
+    
+    function changeColor() {
+        bestchoice.style.color = "blue";
+        para2.innerHTML = "You just clicked Best Choice Technologies now"
+        let age2 = prompt("How old are you?");
+        age.innerHTML= `You are ${age2}years old`;
+        show.style.color = "red";
+
+    }
+    </script>
+</body>
+</html>

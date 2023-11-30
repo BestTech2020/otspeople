@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(1, 48, 1);
+}
+header .container{
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.bars{
+    display: none;
+    font-size: 18px;
+}
+header .container ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+header .container ul li{
+    margin-left: 20px;
+}
+
+/* banner */
+#banner{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(to left, rgba(15, 49, 1, 0.7), rgba(71, 235, 109, 0.5));
+}
+#banner .container{
+    width: 100%;
+    height: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner .container .left{
+    width: 50%;
+    /* border-radius: 50%; */
+    /* border: 2px solid red; */
+    /* margin: 0px auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner .container .right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    
+}
+#banner .container .left img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow:  3px 5px 7px rgba(9, 115, 50, 0.597);
+    
+}
+
+#banner .container .right h1{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.4em;
+    text-align: left;
+}
+#banner .container .right  p{
+    font-size: 24px;
+    line-height: 1.2em;
+    text-align: left;
+}
+#banner .container .right button{
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: green;
+text-align: center;
+    margin-top: 20px;
+    border: none;
+    
+}
+
+/* about */
+#about{
+    width: 100%;
+}
+#about .container{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;
+}
+#about .container .left{
+    width: 40%;
+}
+#about .container .right{
+    width: 60%;
+}
+
+/* media query */
+@media screen and (max-width: 760px){
+    header .container ul{
+        display: none;
+    }
+    header .container .bars{
+        display: block;
+        font-size: 25px;
+    }
+    #banner{
+        background: linear-gradient(rgba(0, 0, 0, 0.683), rgba(0, 0, 0, 0.877)), url(/resources/images/IMG_9875.JPG);
+        background-position: center;
+        background-size: cover;
+    }
+    #banner .container{
+        padding: 0px 50px;
+        text-align: center;
+    }
+    #banner .container .right{
+        width: 100%;
+        text-align: center;
+        display: block;
+        color: #fff;
+    }
+    #banner .container .right h1{
+        text-align: center;
+        line-height: 1.1em;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    #banner .container .left{
+        display: none;
+    }
+
+    /* about */
+    #about .container{
+        display: block;
+        padding: 30px;
+
+    }
+    #about .container .left{
+        width: 100%;
+    }
+    #about .container .right{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 760px) and (max-width: 1180px){
+    
+    header .container .bars{
+        display: none;
+        font-size: 25px;
+    }
+    #banner{
+        background: linear-gradient(rgba(0, 0, 0, 0.683), rgba(0, 0, 0, 0.877)), url(/resources/images/IMG_9875.JPG);
+        background-position: center;
+        background-size: cover;
+    }
+    #banner .container{
+        padding: 0px 50px;
+        text-align: center;
+        color: #fff;
+    }
+    #banner .container .left{
+        display: none;
+    }
+    #banner .container .right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #banner .container .right h1{
+        font-size: 4rem;
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+    #banner .container .right p{
+        font-size: 40px;
+    }
+    #banner .container .right button{
+        font-size: 30px;
+        color: #fff;
+    }
+
+}
